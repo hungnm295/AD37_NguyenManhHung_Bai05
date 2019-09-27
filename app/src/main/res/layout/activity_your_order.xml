@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/yourOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DACBCB">
+
+        <ImageButton
+            android:id="@+id/imgButtonBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:id="@+id/tvYourOrder"
+            android:layout_toRightOf="@+id/imgButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/yourOrder"
+        android:background="@drawable/custom_background"
+        android:id="@+id/rvList2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/rvList2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"/>
+        <TextView
+            android:id="@+id/tvTotalPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

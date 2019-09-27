@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="food1">Pizza Panda</string>
+    <string name="food2">KFC Super</string>
+    <string name="food3">Bread Eggs</string>
+    <string name="food4">Coca Cola</string>
+    <string name="food5">Chicken Super</string>
+    <string name="food6">Cup Cake</string>
+</resources>
