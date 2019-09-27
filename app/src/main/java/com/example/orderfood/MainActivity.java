@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), YourOrder.class);
+                intent.putExtra("totalPrice", totalPrice);
                 orderFoodList = new ArrayList<>();
                 if (food1Count>0){
                     Food orderFood1 = new Food(food1.getName(), food1Count);

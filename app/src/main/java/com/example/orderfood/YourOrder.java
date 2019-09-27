@@ -16,7 +16,7 @@ public class YourOrder extends AppCompatActivity {
         setContentView(R.layout.activity_your_order);
         tvTotalPrice2 = findViewById(R.id.tvTotalPrice2);
         Intent intent = getIntent();
-        int totalPrice = intent.getIntExtra("total", 1);
+        int totalPrice = intent.getIntExtra("totalPrice", 1);
         tvTotalPrice2.setText(totalPrice + "$");
     }
 }
